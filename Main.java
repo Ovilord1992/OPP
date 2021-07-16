@@ -17,9 +17,12 @@ import Table_5.Task_4.Figura;
 import Table_5.Task_4.Pramoug;
 import Table_5.Task_4.Trapec;
 import Table_6.Task_1.Array;
+import Table_7.ArrayHendler;
+import Table_7.PatternImple;
+import Table_8.Desc;
+import Table_8.Arr;
 
 import java.util.Arrays;
-//TODO 1 list 100%
 
 public class Main {
     public static void main(String[] args) {
@@ -64,6 +67,14 @@ public class Main {
 
         System.out.println(arrays.avg());
         arrays.sortDesc();
+
+        Arr desc = new Desc();
+        desc.randomSet(10);
+        desc.print();
+
+        ArrayHendler patter = new PatternImple();
+        System.out.println(patter.max(1,2,4));
+        System.out.println(patter.min(1,2,4,5,6));
 
 
     }

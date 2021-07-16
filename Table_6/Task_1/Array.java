@@ -4,8 +4,6 @@ import Table_6.Task_2.IMath;
 import Table_6.Task_3.ISort;
 
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 
 public class Array implements IShow, IMath, ISort {
     int[] ar = new int[5];
