@@ -19,8 +19,9 @@ import Table_5.Task_4.Trapec;
 import Table_6.Task_1.Array;
 import Table_7.ArrayHendler;
 import Table_7.PatternImple;
-import Table_8.Desc;
-import Table_8.Arr;
+import Table_8.Task_1.A;
+import Table_8.Task_1.Arr;
+import Table_8.Task_2.Matrix;
 
 import java.util.Arrays;
 
@@ -68,13 +69,22 @@ public class Main {
         System.out.println(arrays.avg());
         arrays.sortDesc();
 
-        Arr desc = new Desc();
+        Arr desc = new A();
         desc.randomSet(10);
         desc.print();
+        desc.setMassKey();
+        desc.print();
+        desc.binarySearch(4);
 
         ArrayHendler patter = new PatternImple();
         System.out.println(patter.max(1,2,4));
         System.out.println(patter.min(1,2,4,5,6));
+
+        Matrix m = new Table_8.Task_2.A();
+        m.autoGenMatrix(5);
+        m.printer();
+        System.out.println(m.avg());
+
 
 
     }

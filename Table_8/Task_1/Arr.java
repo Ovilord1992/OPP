@@ -1,13 +1,22 @@
-package Table_8;
+package Table_8.Task_1;
 
-import java.util.Arrays;
 
+import java.util.Scanner;
 
 public abstract class Arr {
     private int[] mass;
 
-    public void setMass(int... mass) {
-        this.mass = mass;
+    public int[] getMass() {
+        return mass;
+    }
+
+    public void setMassKey() {
+        Scanner scanner = new Scanner(System.in);
+        String[] a = scanner.nextLine().split(" ");
+        mass = new int[a.length];
+        for (int i = 0; i < a.length; i++) {
+            mass[i] = Integer.parseInt(a[i]);
+        }
     }
 
     public void randomSet(int massLenth) {
